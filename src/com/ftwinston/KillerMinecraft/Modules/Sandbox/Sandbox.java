@@ -1,5 +1,8 @@
 package com.ftwinston.KillerMinecraft.Modules.Sandbox;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.World.Environment;
@@ -29,9 +32,9 @@ public class Sandbox extends PersistentGameMode
 	}
 	
 	@Override
-	public String getHelpMessage(int num, TeamInfo team)
+	public List<String> getHelpMessages(TeamInfo team)
 	{
-		return null;
+		return new LinkedList<String>();
 	}
 	
 	@Override
